@@ -1,6 +1,6 @@
-# Project Title
+# Brewing Company Sample Website
 
-One Paragraph of project description goes here
+This is a website I created in Laravel which simulates a brewing company website.
 
 ## Getting Started
 
