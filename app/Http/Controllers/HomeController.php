@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\About;
 use App\Beers;
-use App\BeerMaltsLinks;
 use App\BeerHopsLinks;
+use App\BeerMaltsLinks;
 use App\Employment;
 use App\Events;
 use App\Home;
