@@ -6,7 +6,7 @@ use App\About;
 use App\Config;
 use App\Home;
 use App\Http\Controllers\Controller;
-use App\Jobs;
+use App\Employment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -179,7 +179,7 @@ class ConfigController extends Controller
     */
     public function jobs()
     {
-        $jobs = Jobs::firstOrFail();
+        $jobs = Employment::firstOrFail();
         if ($jobs) {
 
             return view('admin/config/jobs',[
@@ -200,7 +200,7 @@ class ConfigController extends Controller
     public function postJobs(Request $request)
     {
         $this->validatePageForm($request);
-        $jobs = Jobs::first();
+        $jobs = Employment::first();
 
         $jobs->description = $request->input('description');
         $jobs->timestamps = false;
