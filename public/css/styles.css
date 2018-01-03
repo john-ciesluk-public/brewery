@@ -1,0 +1,454 @@
+/* Colors: red:#E76551, tan:FEF7EF, light-tan:FDF6EE, dark-gray:4A4742, tan-gray:C6C1BB, dark-gray2:3D3A31 */
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	background-color: #FEF7EF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin-bottom: 120px;
+}
+* {
+	border-radius: 0 !important;
+}
+
+.header-image {
+	background-image: url("../img/header-image.jpg");
+	background-color: #4A4742;
+}
+.header-text {
+	font-size: 18px;
+}
+
+.footer {
+	/*margin-bottom: 30px;*/
+	color: #FDF6EE;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 120px;
+}
+
+.footer a {
+	color: #FDF6EE;
+	font-size: 18px;
+}
+.footer a:focus, .footer a:hover {
+	color: #E76551;
+	font-size: 18px;
+}
+
+.footer-color {
+	background-color: #4A4742;
+	padding: 10px;
+}
+
+.modal-content {
+	background-color: #FEF7EF;
+}
+
+/*** This is only for the fancy title I made, remove when replacing with an image ***/
+.title {
+	font-size: 50px !important;
+	color: black;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+	text-shadow: 3px 3px #4A4742, -4px 5px #E76551;
+	letter-spacing: 2px;
+	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+}
+.title-secondary {
+	font-family: "Courier New", Courier, monospace;
+	top: -20px;
+	position: relative;
+	text-shadow: -1px 0 #4A4742, 0 1px #4A4742, 1px 0 #4A4742, 0 -1px #4A4742;
+	color: #E76551;
+	letter-spacing: 4px;
+	font-size: 32px;
+}
+
+.input-group-addon {
+	color: #3D3A31;
+	background-color: #C6C1BB;
+}
+
+a {
+	color: #FEF7EF;
+}
+a:focus, a:hover {
+	color: #E76551;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+	color: #FEF7EF;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #FEF7EF;
+}
+
+.navbar-default .navbar-brand {
+	color: #FEF7EF;
+}
+
+.home-page-fixed-height {
+	height: 400px;
+}
+
+.red {
+	color: #E76551;
+}
+
+.gray {
+	background-color: #3D3A31;
+	opacity: 0.95;
+}
+
+.well {
+	border-radius: 0
+}
+
+.well-dark {
+	background-color: #4A4742;
+}
+.well-light {
+	background-color: #C6C1BB;
+}
+
+.menu {
+	/*height: 200px;*/
+	background-color: #4A4742;
+	color: #FEF7EF;
+	font-weight: bold;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+.events {
+	font-size: 18px;
+}
+
+span.glyphicon-link {
+    font-size: 2.5em;
+}
+span.glyphicon-star-empty {
+	font-size: 1.5em;
+}
+
+.row-margin {
+	margin-bottom: 30px;
+}
+.dark-text {
+	color: #3D3A31;
+}
+.dark-link a {
+	color: #3D3A31;
+}
+.dark-link a:focus, .dark-link a:hover {
+	color: #000;
+}
+
+.light-text {
+	color: #FEF7EF;
+}
+.light-link a {
+	color: #FEF7EF;
+}
+.light-link a:focus, .light-link a:hover {
+	color: #E76551;
+}
+
+.one-third-left {
+	background-color: #C6C1BB;
+	color: #3D3A31;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.one-third-middle {
+	background-color: #3D3A31;
+	color: #FEF7EF;
+	padding: 10px;
+	font-size: 18px;
+}
+
+
+.one-third-right {
+	background-color: #C6C1BB;
+	color: #4A4742;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.bordered {
+	font-size: 18px;
+	/*border: 2px solid #3D3A31;*/
+	padding: 10px;
+	padding-left: 20px;
+	border-radius: 3px;
+	/*background-color: #C6C1BB;*/
+}
+.bordered h3 {
+	text-align: center;
+}
+
+.btn-padded {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Modal */
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal-padding {
+	padding: 30px;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/*******
+ Slider
+ https://tympanus.net/codrops/2011/09/12/elastislide-responsive-carousel/
+ https://tympanus.net/Development/Elastislide/index3.html
+*******/
+/* Custom Elastislide Styling */
+
+.tympanus .elastislide-horizontal {
+	background-color: #000;
+	padding: 30px 60px;
+}
+
+.no-touch .tympanus .elastislide-horizontal {
+	opacity: 0.8;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-ms-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.no-touch .tympanus .elastislide-horizontal:hover {
+	opacity: 1;
+}
+
+.tympanus .elastislide-wrapper nav span {
+	background-color: #000;
+}
+
+.tympanus .elastislide-carousel ul li a{
+	padding: 0 10px;
+}
+
+.tympanus .elastislide-carousel ul li a img {
+	border-radius: 10px;
+	border: none;
+}
+
+.demo-4 .elastislide-horizontal {
+	background-color: transparent;
+	border-radius: 20px 20px 0 0;
+}
+
+.tympanus .elastislide-horizontal.elastislide-loading,
+.demo-4 .elastislide-horizontal.elastislide-loading {
+	background-image: url(../images/loading_dark.gif);
+}
+
+@media screen and (max-width: 460px) {
+	.tympanus .elastislide-horizontal {
+		padding: 10px 40px;
+	}
+}
+
+/********
+ Custom Buttons
+********/
+
+.btn-tan {
+  color: #3D3A31;
+  background-color: #C6C1BB;
+  border-color: #FFFFFF;
+}
+
+.btn-tan:hover,
+.btn-tan:focus,
+.btn-tan:active,
+.btn-tan.active,
+.open .dropdown-toggle.btn-tan {
+  color: #3D3A31;
+  background-color: #FDF6EE;
+  border-color: #FFFFFF;
+}
+
+.btn-tan:active,
+.btn-tan.active,
+.open .dropdown-toggle.btn-tan {
+  background-image: none;
+}
+
+.btn-tan.disabled,
+.btn-tan[disabled],
+fieldset[disabled] .btn-tan,
+.btn-tan.disabled:hover,
+.btn-tan[disabled]:hover,
+fieldset[disabled] .btn-tan:hover,
+.btn-tan.disabled:focus,
+.btn-tan[disabled]:focus,
+fieldset[disabled] .btn-tan:focus,
+.btn-tan.disabled:active,
+.btn-tan[disabled]:active,
+fieldset[disabled] .btn-tan:active,
+.btn-tan.disabled.active,
+.btn-tan[disabled].active,
+fieldset[disabled] .btn-tan.active {
+  background-color: #C6C1BB;
+  border-color: #FFFFFF;
+}
+
+.btn-tan .badge {
+  color: #C6C1BB;
+  background-color: #3D3A31;
+}
+
+.btn-brown {
+  color: #FDF6EE;
+  background-color: #4A4742;
+  border-color: #000000;
+}
+
+.btn-brown:hover,
+.btn-brown:focus,
+.btn-brown:active,
+.btn-brown.active,
+.open .dropdown-toggle.btn-brown {
+  color: #FDF6EE;
+  background-color: #3D3A31;
+  border-color: #000000;
+}
+
+.btn-brown:active,
+.btn-brown.active,
+.open .dropdown-toggle.btn-brown {
+  background-image: none;
+}
+
+.btn-brown.disabled,
+.btn-brown[disabled],
+fieldset[disabled] .btn-brown,
+.btn-brown.disabled:hover,
+.btn-brown[disabled]:hover,
+fieldset[disabled] .btn-brown:hover,
+.btn-brown.disabled:focus,
+.btn-brown[disabled]:focus,
+fieldset[disabled] .btn-brown:focus,
+.btn-brown.disabled:active,
+.btn-brown[disabled]:active,
+fieldset[disabled] .btn-brown:active,
+.btn-brown.disabled.active,
+.btn-brown[disabled].active,
+fieldset[disabled] .btn-brown.active {
+  background-color: #4A4742;
+  border-color: #000000;
+}
+
+.btn-brown .badge {
+  color: #4A4742;
+  background-color: #FDF6EE;
+}
+
+.btn-red {
+  color: #FFFFFF;
+  background-color: #EB2F12;
+  border-color: #FFFFFF;
+}
+
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active,
+.btn-red.active,
+.open .dropdown-toggle.btn-red {
+  color: #FFFFFF;
+  background-color: #A8121C;
+  border-color: #FFFFFF;
+}
+
+.btn-red:active,
+.btn-red.active,
+.open .dropdown-toggle.btn-red {
+  background-image: none;
+}
+
+.btn-red.disabled,
+.btn-red[disabled],
+fieldset[disabled] .btn-red,
+.btn-red.disabled:hover,
+.btn-red[disabled]:hover,
+fieldset[disabled] .btn-red:hover,
+.btn-red.disabled:focus,
+.btn-red[disabled]:focus,
+fieldset[disabled] .btn-red:focus,
+.btn-red.disabled:active,
+.btn-red[disabled]:active,
+fieldset[disabled] .btn-red:active,
+.btn-red.disabled.active,
+.btn-red[disabled].active,
+fieldset[disabled] .btn-red.active {
+  background-color: #EB2F12;
+  border-color: #FFFFFF;
+}
+
+.btn-red .badge {
+  color: #EB2F12;
+  background-color: #FFFFFF;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    z-index: 1000;
+    cursor: default;
+    padding: 0;
+    margin-top: 2px;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+       -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.ui-autocomplete > li {
+  padding: 3px 20px;
+}
+.ui-autocomplete > li.ui-state-focus {
+  background-color: #DDD;
+}
+.ui-helper-hidden-accessible {
+  display: none;
+}

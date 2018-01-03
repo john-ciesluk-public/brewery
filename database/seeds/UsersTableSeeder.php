@@ -1,0 +1,31 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use Faker\Factory as Faker;
+use App\Users;
+use Carbon\Carbon;
+
+class UsersTableSeeder extends Seeder
+{
+    /**
+    * Run the database seeds.
+    *
+    * @return void
+    */
+    public function run()
+    {
+        $faker = Faker::create();
+
+        $password = 'password';
+
+        for ($i=0;$i<5;$i++) {
+
+            DB::table('users')->insert([
+                'name' => $faker->name,
+                'email' => $faker->email,
+                'password' => bcrypt($password),
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            ]);
+        }
+    }
+}
