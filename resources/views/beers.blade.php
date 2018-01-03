@@ -3,12 +3,13 @@
 <div class="row">
 	<div class="col-sm-3">
 		<h2 class="text-center">Menu</h2>
+		*<span class="red">on tap</span>
 		<hr />
 		<div class="bordered dark-link">
 			<h3>Signature</h3>
 		    @if ($signatures)
 		        @foreach ($signatures as $signature)
-	  				<a href="#{{ $signature['slug'] }}">{{ $signature['title'] }}</a>@if ($signature['available']) <span class="red">(on tap)</span>@endif @if ($signature['deleted']) <span class="red">(deleted)</span>@endif
+	  				@if ($signature['available']) * @endif<a href="#{{ $signature['slug'] }}">{{ $signature['title'] }}</a>
 	  				<br />
 				@endforeach
 			@else
@@ -17,7 +18,7 @@
 			<h3>Seasonal</h3>
 			@if ($seasonals)
 				@foreach ($seasonals as $seasonal)
-					<a href="#{{ $seasonal['slug'] }}">{{ $seasonal['title'] }}</a>@if ($seasonal['available']) <span class="red">(on tap)</span>@endif @if ($seasonal['deleted']) <span class="red">(deleted)</span>@endif
+					@if ($seasonal['available']) * @endif<a href="#{{ $seasonal['slug'] }}">{{ $seasonal['title'] }}</a>
 					<br />
 				@endforeach
 			@else
@@ -26,7 +27,7 @@
 			<h3>Experimental</h3>
 			@if ($experimentals)
 				@foreach ($experimentals as $experimental)
-					<a href="#{{ $experimental['slug'] }}">{{ $experimental['title'] }}</a>@if ($experimental['available']) <span class="red">(on tap)</span>@endif @if ($experimental['deleted']) <span class="red">(deleted)</span>@endif
+					@if ($experimental['available']) * @endif<a href="#{{ $experimental['slug'] }}">{{ $experimental['title'] }}</a>
 					<br />
 				@endforeach
 			@else
