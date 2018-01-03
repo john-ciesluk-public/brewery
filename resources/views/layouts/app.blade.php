@@ -24,7 +24,6 @@
 								<div class="menu text-center">
 									<span class="glyphicon glyphicon-grain glyphicon-link" aria-hidden="true"></span>
 									<br />
-									@if (Auth::user())
 									<a href="{{ url('') }}">Home</a>
 									<br />
 									<a href="{{ url('events') }}">Events</a>
@@ -32,6 +31,7 @@
 									<a href="{{ url('about') }}">About Us</a>
 									<br />
 									<a href="{{ url('beers') }}">Our Crafts</a>
+									@if (Auth::user())
 									<div class="row"><div class="col-sm-10 col-sm-offset-1"><hr /></div></div>
 									<a href="{{ url('admin') }}">Admin Home</a>
 									<br />
@@ -52,14 +52,6 @@
 									<a href="{{ url('admin/config') }}">Site Configuration</a>
 									<br />
 									<a href="{{ url('logout') }}">Logout</a>
-									@else
-									<a href="{{ url('') }}">Home</a>
-									<br />
-									<a href="{{ url('events') }}">Events</a>
-									<br />
-									<a href="{{ url('about') }}">About Us</a>
-									<br />
-									<a href="{{ url('beers') }}">Our Crafts</a>
 									@endif
 								</div>
 							</div>
