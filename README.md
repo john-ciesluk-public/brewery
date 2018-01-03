@@ -46,8 +46,9 @@ http://example.com/admin/config
 
 ## Built With
 
-* [Laravel 5.5](https://www.laravel.com) - The web framework used
+* [Laravel 5.5](https://www.laravel.com) - The PHP web framework used
 * [VueJS 2.5.13](https:/vuejs.org/) - VueJS
+* [Bootstrap 3.3.7](https://getbootstrap.com/docs/3.3/) - Bootstrap CSS
 
 ## Authors
 
