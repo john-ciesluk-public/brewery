@@ -3,13 +3,12 @@
 <div class="row">
 	<div class="col-sm-3">
 		<h2 class="text-center">Menu</h2>
-		*<span class="red">on tap</span>
 		<hr />
 		<div class="bordered dark-link">
 			<h3>Signature</h3>
 		    @if ($signatures)
 		        @foreach ($signatures as $signature)
-	  				@if ($signature['available']) * @endif<a href="#{{ $signature['slug'] }}">{{ $signature['title'] }}</a>
+	  				<a href="#{{ $signature['slug'] }}">{{ $signature['title'] }}</a>
 	  				<br />
 				@endforeach
 			@else
@@ -18,7 +17,7 @@
 			<h3>Seasonal</h3>
 			@if ($seasonals)
 				@foreach ($seasonals as $seasonal)
-					@if ($seasonal['available']) * @endif<a href="#{{ $seasonal['slug'] }}">{{ $seasonal['title'] }}</a>
+					<a href="#{{ $seasonal['slug'] }}">{{ $seasonal['title'] }}</a>
 					<br />
 				@endforeach
 			@else
@@ -27,7 +26,7 @@
 			<h3>Experimental</h3>
 			@if ($experimentals)
 				@foreach ($experimentals as $experimental)
-					@if ($experimental['available']) * @endif<a href="#{{ $experimental['slug'] }}">{{ $experimental['title'] }}</a>
+					<a href="#{{ $experimental['slug'] }}">{{ $experimental['title'] }}</a>
 					<br />
 				@endforeach
 			@else
@@ -69,6 +68,8 @@
 										{{ $malt['beers_id'] == $beer['id'] ? $malt['malt'].'&nbsp;' : '' }}
 									@endforeach
 								</dd>
+								<dt>Currently on Tap:</dt>
+								<dd>@if ($beer['available']) Yes @else No @endif</dd>
 							</dl>
 							<p align="justify">{{ $beer['description'] }}</p>
 						</div>
