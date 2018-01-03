@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\About;
+use App\Config;
+use App\Home;
 use App\Http\Controllers\Controller;
+use App\Jobs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Config;
 
 class ConfigController extends Controller
 {
@@ -131,6 +134,120 @@ class ConfigController extends Controller
     }
 
     /**
+    * Show update about form
+    *
+    * @return \Illuminate\View\View
+    *
+    */
+    public function about()
+    {
+        $about = About::firstOrFail();
+        if ($about) {
+
+            return view('admin/config/about',[
+                'about' => $about
+            ]);
+        }
+
+        abort(404);
+    }
+
+    /**
+    * Update the about page
+    *
+    * @param Request $request
+    * @return \Illuminate\Http\RedirectResponse
+    *
+    */
+    public function postAbout(Request $request)
+    {
+        $this->validatePageForm($request);
+        $about = About::first();
+
+        $about->description = $request->input('description');
+        $about->timestamps = false;
+        $about->save();
+
+        return redirect('/admin/config')->with('message', 'Your about page settings have been successfully updated');
+    }
+
+    /**
+    * Show update jobs form
+    *
+    * @return \Illuminate\View\View
+    *
+    */
+    public function jobs()
+    {
+        $jobs = Jobs::firstOrFail();
+        if ($jobs) {
+
+            return view('admin/config/jobs',[
+                'jobs' => $jobs
+            ]);
+        }
+
+        abort(404);
+    }
+
+    /**
+    * Update the jobs page
+    *
+    * @param Request $request
+    * @return \Illuminate\Http\RedirectResponse
+    *
+    */
+    public function postJobs(Request $request)
+    {
+        $this->validatePageForm($request);
+        $jobs = Jobs::first();
+
+        $jobs->description = $request->input('description');
+        $jobs->timestamps = false;
+        $jobs->save();
+
+        return redirect('/admin/config')->with('message', 'Your jobs page settings have been successfully updated');
+    }
+
+    /**
+    * Show update home form
+    *
+    * @return \Illuminate\View\View
+    *
+    */
+    public function home()
+    {
+        $home = Home::firstOrFail();
+        if ($home) {
+
+            return view('admin/config/home',[
+                'home' => $home
+            ]);
+        }
+
+        abort(404);
+    }
+
+    /**
+    * Update the home page
+    *
+    * @param Request $request
+    * @return \Illuminate\Http\RedirectResponse
+    *
+    */
+    public function postHome(Request $request)
+    {
+        $this->validatePageForm($request);
+        $home = Home::first();
+
+        $home->description = $request->input('description');
+        $home->timestamps = false;
+        $home->save();
+
+        return redirect('/admin/config')->with('message', 'Your home page settings have been successfully updated');
+    }
+
+    /**
     *
     * Validate a form request
     *
@@ -147,6 +264,19 @@ class ConfigController extends Controller
             'address_state' => 'required',
             'address_zipcode' => 'required',
             'address_phone' => 'required'
+        ]);
+    }
+
+    /**
+    *
+    * Validate a page form request
+    *
+    * @param $request
+    */
+    private function validatePageForm($request)
+    {
+        $request->validate([
+            'description' => 'required'
         ]);
     }
 

@@ -58,6 +58,13 @@ Route::post('admin/config/postCreate', 'Admin\ConfigController@postCreate');
 Route::get('admin/config/update/{id}', 'Admin\ConfigController@update');
 Route::post('admin/config/postUpdate/{id}', 'Admin\ConfigController@postUpdate');
 
+Route::get('admin/config/about', 'Admin\ConfigController@about');
+Route::post('admin/config/postAbout', 'Admin\ConfigController@postAbout');
+Route::get('admin/config/jobs', 'Admin\ConfigController@jobs');
+Route::post('admin/config/postJobs', 'Admin\ConfigController@postJobs');
+Route::get('admin/config/home', 'Admin\ConfigController@home');
+Route::post('admin/config/postHome', 'Admin\ConfigController@postHome');
+
 Route::get('admin/users', 'Admin\UsersController@index');
 Route::get('admin/users/create', 'Admin\UsersController@create');
 Route::post('admin/users/postCreate', 'Admin\UsersController@postCreate');

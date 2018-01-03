@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Beers;
+use App\BeerHops;
+use App\BeerHopsLinks;
+use App\BeerMalts;
+use App\BeerMaltsLinks;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Beers;
-use App\BeerMaltsLinks;
-use App\BeerHopsLinks;
-use App\BeerHops;
-use App\BeerMalts;
 
 class BeersController extends Controller
 {

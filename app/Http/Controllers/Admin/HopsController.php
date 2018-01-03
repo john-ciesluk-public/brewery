@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\BeerHops;
+use App\BeerHopsLinks;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\BeerHopsLinks;
-use App\BeerHops;
 
 class HopsController extends Controller
 {

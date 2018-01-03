@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\MailingLists;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\MailingLists;
 
 class MailingListController extends Controller
 {
@@ -28,7 +28,7 @@ class MailingListController extends Controller
     public function index()
     {
         $mailingList = MailingLists::get();
-        
+
         return view('admin/mailinglist/index',[
             'mailingList' => $mailingList,
         ]);

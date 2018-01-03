@@ -47,9 +47,9 @@
 									<br />
 									<a href="{{ url('admin/statistics') }}">Statistics</a>
 									<br />
-									<a href="{{ url('admin/config') }}">Configs</a>
-									<br />
 									<a href="{{ url('admin/users') }}">Users</a>
+									<br />
+									<a href="{{ url('admin/config') }}">Site Configuration</a>
 									<br />
 									<a href="{{ url('logout') }}">Logout</a>
 									@else
