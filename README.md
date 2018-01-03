@@ -8,11 +8,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Server Requirements
 
-PHP >= 7.0.0
-OpenSSL PHP Extension
-PDO PHP Extension
-Mbstring PHP Extension
-Tokenizer PHP Extension
+PHP >= 7.0.0,
+OpenSSL PHP Extension,
+PDO PHP Extension,
+Mbstring PHP Extension,
+Tokenizer PHP Extension,
 XML PHP Extension
 
 ### Installing
@@ -51,11 +51,7 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [Laravel 5.5](https://www.laravel.com) - The web framework used
-* [VueJS](https:/vuejs.org/) - VueJS
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+* [VueJS 2.5.13](https:/vuejs.org/) - VueJS
 
 ## Authors
 
