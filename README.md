@@ -44,10 +44,6 @@ Once logged in, you can alter configuration data to disable registration
 http://example.com/admin/config
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 * [Laravel 5.5](https://www.laravel.com) - The web framework used
