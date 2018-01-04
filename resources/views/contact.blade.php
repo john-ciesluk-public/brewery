@@ -45,19 +45,19 @@
 	</div>
 	<div class="col-sm-5 col-sm-offset-1">
 		<address>
-			<strong>{{ config('sitedata.address.title') }}</strong>
+			<strong>{{ $configVariables->address_title }}</strong>
 			<br>
-			{{ config('sitedata.address.address1') }}
+			{{ $configVariables->address_line1 }}
 			<br />
-			@if (config('sitedata.address.address2'))
-			{{ config('sitedata.address.address2') }}
+			@if ($configVariables->address_line2)
+			{{ $configVariables->address_line2 }}
 			<br />
 			@endif
-			{{ config('sitedata.address.city') }}, {{ config('sitedata.address.state') }} {{ config('sitedata.address.zipcode') }}
+			{{ $configVariables->address_city }}, {{ $configVariables->address_state }} {{ $configVariables->address_zipcode }}
 			<br>
-			<abbr title="Phone">P:</abbr> {{ config('sitedata.address.phone') }}
+			<abbr title="Phone">P:</abbr> {{ $configVariables->address_phone }}
 			<br />
-			<a href="mailto:{{ config('sitedata.email') }}">{{ config('sitedata.email') }}</a>
+			<a href="mailto:{{ $configVariables->email }}">{{ $configVariables->email }}</a>
 		</address>
 	</div>
 </div>
