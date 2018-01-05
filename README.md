@@ -29,6 +29,14 @@ php artisan migrate:fresh
 php artisan db:seed
 ```
 
+Install node and webpack
+
+```
+npm install
+
+npm run dev
+```
+
 Set up a default administrator, or use a seeded sample user
 
 ```
