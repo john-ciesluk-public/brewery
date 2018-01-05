@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="row">
+<div class="row row-margin">
 	<div class="col-sm-3">
 		<h2 class="text-center">Menu</h2>
 		<hr />

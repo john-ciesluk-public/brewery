@@ -1,18 +1,3 @@
-<script src="{{ asset('js/jquery.js') }}"></script>
-<script src="{{ asset('js/bootstrap.min.js')}}"></script>
-<script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/scripts.js') }}"></script>
-
-<script src="{{ asset('js/tinymce/js/tinymce/jquery.tinymce.min.js') }}"></script>
-<script src="{{ asset('js/tinymce/js/tinymce/tinymce.min.js') }}"></script>
-<script>
-var editor_config = {
-  selector: "textarea",
-  format: 'text',
-};
-tinymce.init(editor_config);
-</script>
-
 @if (Auth::user() && Request::segment(2) === 'statistics')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -49,7 +34,3 @@ tinymce.init(editor_config);
     });
 </script>
 @endif
-
-<script>
-  {!! \File::get(base_path('vendor/barryvdh/laravel-elfinder/resources/assets/js/standalonepopup.min.js')) !!}
-</script>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="row">
+<div class="row row-margin">
     <div class="col-sm-12">
         <h2>Mailing List Subscribers</h2>
         @foreach ($mailingList as $list)

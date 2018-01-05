@@ -119,9 +119,7 @@
 		<age-modal title="{{ $configVariables->company }}"></age-modal>
 		@endif
 	</div>
-
-
-
+	@include('layouts.scripts')
 	<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

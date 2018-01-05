@@ -2,7 +2,7 @@
 @section('content')
 <h2>Contact Us</h2>
 <hr />
-<div class="row">
+<div class="row row-margin">
 	<div class="col-sm-6">
     <p align="justify">
     	Write, call, email, or stop by with any questions and we will be happy to help you.

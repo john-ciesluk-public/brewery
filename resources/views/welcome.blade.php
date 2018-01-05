@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="row">
+<div class="row row-margin">
     <div class="col-xs-12 text-center row-margin">
         <span class="title">{{ $configVariables->company }}</span>
         <br />

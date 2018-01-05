@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="row row-margin" id="test">
+<div class="row row-margin">
     <div class="col-xs-12">
         <div class="row dark-link events">
             <div class="col-sm-6 text-center">
