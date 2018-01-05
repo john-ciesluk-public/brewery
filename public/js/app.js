@@ -11919,8 +11919,13 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('event-modal', __webpack_r
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('age-modal', __webpack_require__(40));
 
+/**
+    TODO:
+    add vue2-quill-editor to admin pages
+    add vue2-multiselect to beer admin page (create/update hops/malts)
+*/
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
-  el: '#app'
+    el: '#app'
 });
 
 /***/ }),
@@ -19670,6 +19675,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -19699,7 +19706,6 @@ var render = function() {
         "modal",
         {
           ref: "modal",
-          staticClass: "text-center",
           attrs: {
             footer: false,
             backdrop: false,
@@ -19721,23 +19727,25 @@ var render = function() {
             ])
           ]),
           _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "btn btn-tan btn-padded btn-twentyone",
-              attrs: { href: "/age", type: "button" }
-            },
-            [_vm._v("I am over 21 years old")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "btn btn-red btn-padded",
-              attrs: { type: "button", href: "/" }
-            },
-            [_vm._v("I am under 21 years old")]
-          )
+          _c("div", { staticClass: "text-center" }, [
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-tan btn-padded btn-twentyone",
+                attrs: { href: "/age", type: "button" }
+              },
+              [_vm._v("I am over 21 years old")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-red btn-padded",
+                attrs: { type: "button", href: "/" }
+              },
+              [_vm._v("I am under 21 years old")]
+            )
+          ])
         ]
       )
     ],
