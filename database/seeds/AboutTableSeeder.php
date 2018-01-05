@@ -21,7 +21,7 @@ class AboutTableSeeder extends Seeder
             beers.  We discovered what makes beer good and bad and what to avoid and what to do every time.  We\'ve cleaned vents and growlers, tubes and pipes,
             and everything in between.  We\'ve arranged chairs and tables, put posters up and taken them down, just looking for a way to get everything just right.</p>
             <p class="header-text" align="justify">And in the end, we\'ve put together a few good beers with the knowledge to make many more.  From our tap to your glass.
-            -- The Deer House</p>'
+            <br />-- The Deer House</p>'
         ]);
     }
 }
