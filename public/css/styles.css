@@ -51,9 +51,16 @@ body {
 	background-color: #4A4742;
 	padding: 10px;
 }
-
+.modal-header {
+	background-color: #C6C1BB;
+}
 .modal-content {
-	background-color: #FEF7EF;
+	background-color: #C6C1BB;
+	color: #3D3A31;
+}
+
+modal.age-modal {
+	display: block;
 }
 
 /*** This is only for the fancy title I made, remove when replacing with an image ***/
@@ -142,7 +149,7 @@ span.glyphicon-link {
     font-size: 2.5em;
 }
 span.glyphicon-star-empty {
-	font-size: 1.5em;
+	font-size: 1.5em;color: #FEF7EF;
 }
 
 .row-margin {

@@ -199,5 +199,6 @@ class HomeController extends Controller
     public function age()
     {
         session(["ofAge" => true]);
+        return redirect('/');
     }
 }

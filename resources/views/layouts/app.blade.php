@@ -9,9 +9,8 @@
 
     <title>{{ $configVariables->company }}</title>
 
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
-
 </head>
 <body>
 	<div id="app">
@@ -58,7 +57,7 @@
 						</div>
 					</div>
 				</div>
-		</div>
+			</div>
 			@yield('content')
 		</div>
 		<footer class="footer">
@@ -116,8 +115,13 @@
 				</div>
 			</div>
 		</footer>
+		@if (!session('ofAge'))
+		<age-modal title="{{ $configVariables->company }}"></age-modal>
+		@endif
 	</div>
-	@include('layouts.modals')
-	@include('layouts.scripts')
+
+
+
+	<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
