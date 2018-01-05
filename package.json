@@ -11,14 +11,36 @@
   },
   "devDependencies": {
     "axios": "^0.17",
-    "bootstrap-sass": "^3.3.7",
     "cross-env": "^5.1",
-    "jquery": "^3.2",
     "laravel-mix": "^1.0",
     "lodash": "^4.17.4",
-    "vue": "^2.5.7"
+    "vue": "^2.5.7",
+    "vue-axios": "^2.0.2",
+    "vue-loader": "^13.6.2",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.13"
   },
   "dependencies": {
-    "uiv": "^0.15.4"
-  }
+    "bootstrap-sass": "^3.3.7",
+    "uiv": "^0.15.4",
+    "vue": "^2.5.13"
+  },
+  "name": "deerhouse",
+  "description": "This is a website I created in Laravel which simulates a brewing company website.",
+  "version": "1.0.0",
+  "main": "webpack.mix.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/john-ciesluk-public/brewery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/john-ciesluk-public/brewery/issues"
+  },
+  "homepage": "https://github.com/john-ciesluk-public/brewery#readme"
 }

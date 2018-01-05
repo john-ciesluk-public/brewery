@@ -7,7 +7,10 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+import Vue from 'vue';
+import * as uiv from 'uiv';
+
+Vue.use(uiv);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -16,6 +19,10 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+
+Vue.component('event-modal', require('./components/EventModal.vue'));
+
+Vue.component('age-modal', require('./components/AgeModal.vue'));
 
 const app = new Vue({
     el: '#app'
