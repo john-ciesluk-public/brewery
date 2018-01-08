@@ -1,6 +1,6 @@
 # Brewing Company Sample Website
 
-This is a website I created in Laravel which simulates a brewing company website.
+This is a brewing company website written in Laravel.
 
 ## Getting Started
 
