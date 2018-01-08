@@ -69,7 +69,3 @@ See also the list of [contributors](https://github.com/john-ciesluk-public/brewe
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* This is my first project to learn Laravel and VueJS from the ground up.  More to come.
