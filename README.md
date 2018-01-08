@@ -52,8 +52,6 @@ Once logged in, you can alter configuration data to disable registration
 http://example.com/admin/config
 ```
 
-![alt text](https://raw.githubusercontent.com/john-ciesluk-public/brewery/master/homepage.png)
-
 ## Built With
 
 * [Laravel 5.5](https://www.laravel.com) - The PHP web framework used
