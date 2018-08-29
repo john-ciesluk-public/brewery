@@ -1,6 +1,7 @@
 # Brewing Company Sample Website
 
 This is a brewing company website written in Laravel.
+This was a simple project to learn laravel.  If the world ever opens up a void and suddenly there are 14 days in a week, I will refactor this.
 
 ## Getting Started
 
